@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,600;1,700&family=Yeseva+One&display=swap');
+
+:root {
+    --nav: #F7BCA5;
+    --accent: #F7837C;
+    --text: #F4EAE6;
+    --hover: #69C9BC;
+    --text-color: #229b8b;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #EED6D3;
+    color: #616971;
+  }
+
+  h1 {
+      font-weight: 600;
+      
+  }
+
+  h3 {
+      margin-top: 2rem;
+  }
+
+  h5 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  p {
+      color: var(--text-color)
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .text-color {
+      color: #616971;
+  }
+
+  
+  .navbar {
+   background-color: var(--accent);
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    z-index: 1;
+  }
+
+  .navbar-collapse.show {
+    backdrop-filter: blur(10px);
+  }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+  .navbar-brand { 
+      max-width: 40%;
+  }
+
+  .logo {
+    max-width: 20%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .nav-item {
+    padding: 0.5rem;
+  }
+
+  .nav-link {
+    color: var(--text);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: clamp(.8rem, 2vw, 1.5rem); 
+  }
+
+  .collapse .navbar-nav .nav-item a.nav-link:active,
+  .collapse .navbar-nav .nav-item a.nav-link:hover {
+    color: var(--hover);
+  }
+  
+  #carousel {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-inner {
+    max-height: 38rem !important;
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    transition: transform 1.5s ease;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+  }
+  
+  .carousel-caption h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, .3);
+  }
+  .border-primary {
+    border-top: 0.2rem solid var(--accent) !important;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
+  }
+
+  .btn-lg {
+    border-radius: 2;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+    border-width: medium;
+    padding: 0.5rem;
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .btn-outline-dark {
+      color: var(--hover);
+  }
+
+  .btn:active,
+  .btn-lg:hover {
+      color: #fff
+  }
+
+  .btn:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
+  }
+
+  .lead {
+      font-weight: 400;
+  }
+
+  .image-bg {
+      background-image: url("Images/main-bg.jpg");
+  }
+
+  .card {
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .wrapper img {
+    width: auto;
+    height: 100%;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .card-img-top {
+      min-width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
+  }
+
+  
+  .fixed {
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+      url("Images/pexels-önder-örtel-7187195.jpg");
+    position: fixed;
+  }
+  .fixed-background {
+    padding: 5rem 0;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
+  }
+
+  .table-responsive{
+    display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
+
+  .underline {
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+  }
+
+  td {
+    font-size: clamp(.8rem, 2vw, 1.2rem); 
+  }
+
+  .btn:hover {
+    font-weight: 600;
+  }
+
+  .review {
+      font-family: 'Yeseva One', cursive;
+      color: var(--accent);
+  }
+
+  .btn-outline-dark {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+    border-width: medium;
+    padding: 0.5rem;
+    background-color: transparent !important;
+    border-color: var(--accent);
+  }
+  .btn-outline-dark:hover {
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--hover) !important;
+    border-color: var(--hover);
+  }
+
+  .box {
+    background-color: #EED6D3;
+  }
+
+  .figure-img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .jumbotron {
+    background: var(--nav);
+  }
+  
+  footer {
+    background-color: #69C9BC;
+    padding: 1rem 2rem 3rem;
+  }
+  footer img {
+    height: 3.5rem;
+    margin: 1.5rem auto;
+  }
+  footer p,
+  footer a,
+  .socket a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #contact {
+    margin: 0;
+  }
+
+  .block {
+      display: block;
+  }
+
+  ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  ul.social li {
+    margin: 0 auto;
+  }
+  .svg-inline--fa {
+    font-size: 2.3rem;
+    color: var(--accent);
+  }
+  .svg-inline--fa:hover {
+    color: var(--hover);
+  }
+  
+  .socket {
+    background-color: #222222;
+    border-top: 0.1rem solid var(--accent);
+  }
+
+  .db {
+      color: var(--accent);
+  }
+  
+  /* === Media Queries === */
+  
+  /* Devices under 1199px (xl) */
+  @media (max-width: 1199.98px) {
+    .carousel-caption h1 {
+      font-size: 2.8rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1.5rem;
+    }
+  }
+  /* Devices under 992px (lg) */
+  @media (max-width: 991.98) {
+    .carousel-caption h1 {
+      font-size: 2.5rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1.8rem;
+    }
+    .btn-lg {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /*-- Bootstrap mobile gutter fix --*/
+  .row,
+  .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  
+  /*-- Fixed bootstrap img --*/
+  .fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000 !important;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+  }
+  .fixed {
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Form / Contact page */
+
+  .register-photo {
+    background:var(--text);
+    padding:80px 0;
+  }
+
+  .image-holder {
+      position: relative;
+  }
+
+  .address {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+  }
+  
+  .register-photo .image-holder {
+    display:table-cell;
+    width:auto;
+    background:url("Images/pexels-negative-space-33999.jpg");
+    background-size:cover;
+  }
+  
+  .register-photo .form-container {
+    display:table;
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .register-photo form {
+    display:table-cell;
+    width:400px;
+    background-color:#ffffff;
+    padding:40px 60px;
+    color:#505e6c;
+  }
+  
+  @media (max-width:991px) {
+    .register-photo form {
+      padding:40px;
+    }
+    .address * {
+        display: none;
+    }
+  }
+  
+  .register-photo form h2 {
+    font-size:24px;
+    line-height:1.5;
+    margin-bottom:30px;
+  }
+  
+  .register-photo form .form-control {
+    background:#f7f9fc;
+    border:none;
+    border-bottom:1px solid #dfe7f1;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:6px;
+    height:40px;
+  }
+  
+  .register-photo form .form-check {
+    font-size:13px;
+    line-height:20px;
+  }
+  
+  .register-photo form .btn-primary {
+    background: var(--accent);
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:35px;
+    text-shadow:none;
+    outline:none !important;
+  }
+  
+  .register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+    background: var(--accent);
+  }
+  
+  .register-photo form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  .register-photo form .already {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+  }
+
+  .address * {
+      color: var(--text-color);
+      padding-bottom: 1rem;
+      font-weight: 600;
+  }
+
+  .block:hover {
+    color: var(--text-color);
+    transform:translateY(1px);
+  }
+
+  .dropdown-toggle {
+      width: 100%;
+      text-align: left;
+      color: inherit;
+      background-color: #f7f9fc;
+      border-bottom: 1px solid #dfe7f1;
+  }
+
+  .dropdown-toggle::after {
+      position: absolute;
+      right: 1rem;
+      color: var(--accent)
+  }
+
+  .dropdown-item:hover {
+      color: var(--accent);
+  }
+
+  
