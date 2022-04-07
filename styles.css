@@ -370,6 +370,10 @@ body {
     will-change: transform;
   }
 
+  .svg-inline--fa:hover {
+      color: var(--nav);
+  }
+
   /* Form / Contact page */
 
   .register-photo {
