@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,600;1,700&family=Yeseva+One&display=swap');
 
+
 :root {
     --nav: #F7BCA5;
     --accent: #F7837C;
@@ -22,12 +23,11 @@ body {
 
   h1 {
       font-weight: 600;
-      font-size: 5vw;
-      
+      font-size: 5vw;   
   }
 
   h2 {
-    font-size: 3vw;
+    font-size: 1.7rem;
   }
 
   h3 {
@@ -41,7 +41,6 @@ body {
 
   p {
       color: var(--text-color);
-      /* font-size: 1vw; */
   }
 
   a {
@@ -52,17 +51,15 @@ body {
       color: #616971;
   }
   
-
-  
   .navbar {
    background-color: transparent;
    position: absolute;
    width: auto;
-    width: 100%;
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    z-index: 1;
+   width: 100%;
+   font-size: 1.15rem;
+   font-weight: 600;
+   letter-spacing: 0.1rem;
+   z-index: 1;
   }
 
   .navbar-collapse.show {
@@ -106,19 +103,10 @@ body {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   }
 
-  .carousel-inner {
-    max-height: 38rem !important;
-  }
-  
-  .carousel-item-next,
-  .carousel-item-prev,
-  .carousel-item.active {
-    transition: transform 1.5s ease;
-  }
-  
   .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 60%;
+    right: 5%;
     transform: translateY(-50%);
     text-transform: uppercase;
   }
@@ -131,18 +119,28 @@ body {
   .border-primary {
     border-top: 0.2rem solid var(--accent) !important;
   }
-  
-  .carousel-caption h3 {
-    font-size: 1rem;
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
+
+  .landing {
+    background-color: #dcdbdb;
   }
 
   .landing-img {
+    background-color: #dadcd9;
     position: relative;
     background-position: center;
-    background-size:contain;
+    background-size:cover;
     height: auto;
     width: 100vw;
+  }
+
+  .d-lg-none {
+    position: absolute;
+    color:#F4EAE6;
+    background-color:#69C9BC !important;
+    border-color: #69C9BC !important;
+    border-radius: 2;
+    top: 30%;
+    right: 5%;
   }
 
   .btn-lg {
@@ -156,7 +154,7 @@ body {
     color: var(--text);
   }
 
-  .flex-child {
+  .child {
     position: relative;
   }
 
@@ -171,6 +169,13 @@ body {
   .cta {
     position : absolute;
     top: 20%;
+    padding-left: .5rem;
+  }
+
+  .cta-1 {
+    position : absolute;
+    top: 20%;
+    right: .5rem;
   }
 
   .btn-outline-dark {
@@ -192,13 +197,32 @@ body {
       font-weight: 400;
   }
 
-  /* .image-bg {
-      background-image: url("Images/main-bg.jpg");
-  } */
-
   .card {
     margin-bottom: 1rem;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+  }
+
+  .card-img-top {
+      min-width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
+  }
+
+  .fixed {
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+      url("Images/pexels-önder-örtel-7187195.jpg");
+    position: fixed;
+  }
+  .fixed-background {
+    padding: 5rem 0;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
   }
 
   .wrapper {
@@ -222,31 +246,7 @@ body {
     transform: translateX(-50%);
   }
 
-  .card-img-top {
-      min-width: 100%;
-  }
-  
-  .btn-primary {
-    background-color: var(--accent);
-    border-color: var(--accent);
-  }
-  .btn-primary:hover {
-    background-color: var(--hover);
-    border-color: var(--hover);
-  }
-
-  
-  .fixed {
-    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
-      url("Images/pexels-önder-örtel-7187195.jpg");
-    position: fixed;
-  }
-  .fixed-background {
-    padding: 5rem 0;
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
-  }
-
-  .table-responsive{
+  .table-responsive {
     display: block !important;
     overflow-x: auto !important;
     width: 100% !important;
@@ -280,7 +280,7 @@ body {
     border-color: var(--accent);
   }
   .btn-outline-dark:hover {
-    font-weight: 600;
+    font-weight: 800;
     color: #fff;
     background-color: var(--hover) !important;
     border-color: var(--hover);
@@ -290,11 +290,6 @@ body {
     background-color: #EED6D3;
   }
 
-  .figure-img {
-      width: 100%;
-      height: auto;
-  }
-  
   .jumbotron {
     background: var(--nav);
   }
@@ -303,6 +298,7 @@ body {
     background-color: #69C9BC;
     padding: 1rem 2rem 3rem;
   }
+
   footer img {
     height: 3.5rem;
     margin: 1.5rem auto;
@@ -348,48 +344,7 @@ body {
   .db {
       color: var(--accent);
   }
-  
-  /* === Media Queries === */
-  
-  /* Devices under 1199px (xl) */
-  @media (max-width: 1199.98px) {
-    .carousel-caption h1 {
-      font-size: 2.8rem;
-    }
-    .carousel-caption h3 {
-      font-size: 1.5rem;
-    }
 
-    .btn-lg {
-      font-size: 2vw;
-      border-width: thin;
-      padding: 0.2rem;
-    }
-
-    .ad-text {
-      font-size: 2vw;
-    }
-  }
-  /* Devices under 992px (lg) */
-  @media (max-width: 991.98) {
-    .carousel-caption h1 {
-      font-size: 2.5rem;
-    }
-    .carousel-caption h3 {
-      font-size: 1.8rem;
-    }
-    .btn-lg {
-      font-size: 2vw;
-    }
-  }
-  
-  /*-- Bootstrap mobile gutter fix --*/
-  .row,
-  .container-fluid {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-  
   /*-- Fixed bootstrap img --*/
   .fixed-background {
     position: relative;
@@ -418,7 +373,41 @@ body {
     transform: translateZ(0);
     will-change: transform;
   }
+  
+  /* === Media Queries === */
+  
+  /* Devices under 1199px (xl) */
+  @media (max-width: 1199.98px) {
+    .carousel-caption h1 {
+      font-size: 2.8rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Devices under 992px (lg) */
+  @media (max-width: 991.98px) {
+    .carousel-caption h1 {
+      font-size: 2.5rem;
+    }
+    
+    .flex-container {
+      flex-direction: column;
+    }
 
+    .btn-lg {
+      font-size: 3vw;
+    }
+  }
+  
+  /*-- Bootstrap mobile gutter fix --*/
+  .row,
+  .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+ 
   .svg-inline--fa:hover {
       color: var(--nav);
   }
@@ -551,5 +540,3 @@ body {
   .dropdown-item:hover {
       color: var(--accent);
   }
-
-  
