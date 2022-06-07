@@ -16,9 +16,18 @@ body {
     color: #616971;
   }
 
+  img {
+    display: block;
+  }
+
   h1 {
       font-weight: 600;
+      font-size: 5vw;
       
+  }
+
+  h2 {
+    font-size: 3vw;
   }
 
   h3 {
@@ -31,7 +40,8 @@ body {
   }
 
   p {
-      color: var(--text-color)
+      color: var(--text-color);
+      /* font-size: 1vw; */
   }
 
   a {
@@ -41,10 +51,13 @@ body {
   .text-color {
       color: #616971;
   }
+  
 
   
   .navbar {
-   background-color: var(--accent);
+   background-color: transparent;
+   position: absolute;
+   width: auto;
     width: 100%;
     font-size: 1.15rem;
     font-weight: 600;
@@ -78,7 +91,7 @@ body {
   }
 
   .nav-link {
-    color: var(--text);
+    color: var(--text-color);
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
     font-size: clamp(.8rem, 2vw, 1.5rem); 
@@ -124,15 +137,40 @@ body {
     text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
   }
 
+  .landing-img {
+    position: relative;
+    background-position: center;
+    background-size:contain;
+    height: auto;
+    width: 100vw;
+  }
+
   .btn-lg {
     border-radius: 2;
     text-transform: uppercase;
-    font-size: 1rem !important;
+    font-size: 1rem;
     border-width: medium;
     padding: 0.5rem;
     background-color: var(--accent);
     border-color: var(--accent);
     color: var(--text);
+  }
+
+  .flex-child {
+    position: relative;
+  }
+
+  .body-img {
+    filter: brightness(90%);
+  }
+
+  .beauty-img {
+    filter: brightness(80%);
+  }
+
+  .cta {
+    position : absolute;
+    top: 20%;
   }
 
   .btn-outline-dark {
@@ -148,14 +186,15 @@ body {
     background-color: var(--hover);
     border-color: var(--hover);
   }
+  
 
   .lead {
       font-weight: 400;
   }
 
-  .image-bg {
+  /* .image-bg {
       background-image: url("Images/main-bg.jpg");
-  }
+  } */
 
   .card {
     margin-bottom: 1rem;
@@ -234,7 +273,7 @@ body {
   .btn-outline-dark {
     border-radius: 0;
     text-transform: uppercase;
-    font-size: 1rem !important;
+    font-size: 1vw;
     border-width: medium;
     padding: 0.5rem;
     background-color: transparent !important;
@@ -275,7 +314,7 @@ body {
     text-decoration: none;
   }
 
-  #contact {
+  #service {
     margin: 0;
   }
 
@@ -320,6 +359,16 @@ body {
     .carousel-caption h3 {
       font-size: 1.5rem;
     }
+
+    .btn-lg {
+      font-size: 1vw;
+      border-width: thin;
+      padding: 0.5rem;
+    }
+
+    .ad-text {
+      font-size: 1vw;
+    }
   }
   /* Devices under 992px (lg) */
   @media (max-width: 991.98) {
@@ -330,7 +379,7 @@ body {
       font-size: 1.8rem;
     }
     .btn-lg {
-      font-size: 0.95rem;
+      font-size: 1vw;
     }
   }
   
