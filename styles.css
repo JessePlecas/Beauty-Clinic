@@ -361,13 +361,13 @@ body {
     }
 
     .btn-lg {
-      font-size: 1vw;
+      font-size: 2vw;
       border-width: thin;
-      padding: 0.5rem;
+      padding: 0.2rem;
     }
 
     .ad-text {
-      font-size: 1vw;
+      font-size: 2vw;
     }
   }
   /* Devices under 992px (lg) */
@@ -379,7 +379,7 @@ body {
       font-size: 1.8rem;
     }
     .btn-lg {
-      font-size: 1vw;
+      font-size: 2vw;
     }
   }
   
