@@ -215,7 +215,104 @@ body {
     border-color: var(--hover);
   }
 
-  .fixed {
+  /* Price List Cards */
+
+  .pricingTable{
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px -5px rgba(0,0,0,0.3);
+}
+.pricingTable .pricingTable-header{
+    color: #fff;
+    background-color: #F08BEB;
+    padding: 20px 0;
+    margin: 0 0 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+.pricingTable .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* .pricingTable .price-value{
+    color: #888;
+    margin: 0 0 15px;
+}
+.pricingTable .price-value .amount{
+    font-size: 42px;
+    font-weight: 500;
+} */
+.pricingTable .price-value .duration{ font-size: 17px; }
+.pricingTable .pricing-content{
+    background: linear-gradient(#F27CC6,#F25A73);
+    padding: 25px 0;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.pricingTable .content-list{
+    padding: 0;
+    margin: 0 0 25px;
+    list-style: none;
+}
+.pricingTable .content-list li{
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    padding: 15px 45px 15px 15px;
+    position: relative;
+}
+.pricingTable .content-list li:nth-child(even){ background-color: rgba(0,0,0,0.2); }
+.pricingTable .content-list li:before{
+    content: "";
+    color: #fff;
+    /* font-family: "Font Awesome 5 Free"; */
+    font-weight: 900;
+    font-size: 18px;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+
+.cost {
+  color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+.pricingTable .content-list li.disable:before{ content: "\f00d"; }
+.pricingTable .pricingTable-signup a{
+    color: #444;
+    background-color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+.pricingTable.blue .pricingTable-header{ background-color: #5AD8D7; }
+.pricingTable.blue .pricing-content{ background: linear-gradient(#4DC6E1,#249FFC); }
+.pricingTable.purple .pricingTable-header{ background-color: #6778E2; }
+.pricingTable.purple .pricing-content{ background: linear-gradient(#6B69CC,#734FA7); }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
+
+  /* .fixed {
     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
       url("Images/pexels-önder-örtel-7187195.jpg");
     position: fixed;
@@ -259,7 +356,7 @@ body {
 
   td {
     font-size: clamp(.8rem, 2vw, 1.2rem); 
-  }
+  } */
 
   .btn:hover {
     font-weight: 600;
@@ -346,7 +443,7 @@ body {
   }
 
   /*-- Fixed bootstrap img --*/
-  .fixed-background {
+  /* .fixed-background {
     position: relative;
     width: 100%;
     z-index: 1000 !important;
@@ -373,7 +470,7 @@ body {
     transform: translateZ(0);
     will-change: transform;
   }
-  
+   */
   /* === Media Queries === */
   
   /* Devices under 1199px (xl) */
