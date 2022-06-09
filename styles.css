@@ -92,9 +92,10 @@ body {
     font-size: clamp(.8rem, 2vw, 1.5rem); 
   }
 
+
   .collapse .navbar-nav .nav-item a.nav-link:active,
   .collapse .navbar-nav .nav-item a.nav-link:hover {
-    color: var(--text-color);
+    color: var(--hover);
   }
   
   #carousel {
@@ -284,7 +285,7 @@ body {
     width: 150px;
     padding: 8px 20px;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 2px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     display: block;
     transition: all 0.3s ease 0s;
