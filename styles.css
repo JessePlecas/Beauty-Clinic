@@ -78,7 +78,7 @@ body {
   }
 
   .logo {
-    max-width: 80%;
+    max-width: 30%;
   }
 
   .nav-item {
@@ -138,7 +138,7 @@ body {
     background-color:#69C9BC !important;
     border-color: #69C9BC !important;
     border-radius: 2;
-    top: 30%;
+    top: 20%;
     right: 5%;
   }
 
